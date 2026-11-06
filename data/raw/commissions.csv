@@ -1,0 +1,5 @@
+attainment_min,attainment_max,commission_rate
+0,50,0.0
+50,80,0.02
+80,100,0.04
+100,999,0.06

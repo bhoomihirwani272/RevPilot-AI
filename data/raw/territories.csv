@@ -1,0 +1,11 @@
+territory_id,territory_name,region,manager_id
+T01,Pune,West,M01
+T02,Mumbai,West,M02
+T03,Nagpur,West,M03
+T04,Delhi,Other,M04
+T05,Bangalore,Other,M05
+T06,Hyderabad,Other,M06
+T07,Chennai,Other,M07
+T08,Kolkata,Other,M08
+T09,Ahmedabad,West,M09
+T10,Jaipur,Other,M10

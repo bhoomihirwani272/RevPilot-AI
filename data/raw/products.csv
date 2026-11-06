@@ -1,0 +1,31 @@
+product_id,product_name,category,unit_price
+P001,Product_1,Cloud Services,24663
+P002,Product_2,Hardware,18414
+P003,Product_3,Cloud Services,115162
+P004,Product_4,Cloud Services,27350
+P005,Product_5,Hardware,158682
+P006,Product_6,Cloud Services,65738
+P007,Product_7,Security,113712
+P008,Product_8,Security,47452
+P009,Product_9,Cloud Services,46603
+P010,Product_10,Hardware,157159
+P011,Product_11,Analytics,78876
+P012,Product_12,Analytics,122311
+P013,Product_13,Analytics,114700
+P014,Product_14,Cloud Services,67493
+P015,Product_15,Hardware,143569
+P016,Product_16,Security,33831
+P017,Product_17,Software,38743
+P018,Product_18,Hardware,174481
+P019,Product_19,Hardware,188384
+P020,Product_20,Security,166345
+P021,Product_21,Software,110864
+P022,Product_22,Security,166208
+P023,Product_23,Security,148704
+P024,Product_24,Cloud Services,155024
+P025,Product_25,Software,188332
+P026,Product_26,Software,188706
+P027,Product_27,Analytics,79946
+P028,Product_28,Cloud Services,39242
+P029,Product_29,Cloud Services,123971
+P030,Product_30,Hardware,128940
