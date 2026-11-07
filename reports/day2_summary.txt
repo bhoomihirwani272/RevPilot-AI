@@ -1,0 +1,136 @@
+# AGENTAI-035 – SALES MANAGEMENT SYSTEM
+## DAY 2 PROGRESS REPORT
+
+### 1. Objective
+
+The main objective of Day 2 was to analyse the generated sales data and develop different analytics modules to understand sales performance, territory performance, quota achievement and deal health.
+
+### 2. Representative Performance Analysis
+
+Created a sales representative scorecard to track the performance of individual sales representatives.
+
+The following details were calculated:
+- Total number of deals handled.
+- Number of won deals.
+- Number of closed deals.
+- Win rate.
+- Total revenue generated from won deals.
+
+This analysis helps compare the performance of different sales representatives.
+
+**Output:** `data/processed/rep_scorecard.csv`
+
+### 3. Territory Performance Analysis
+
+Developed a territory analytics module to understand how different sales territories are performing.
+
+The following metrics were calculated:
+- Total number of accounts.
+- Active accounts.
+- Account revenue.
+- Number of won deals.
+- Total won revenue.
+- Revenue contribution of the top five accounts.
+- Account concentration warning.
+
+This helps identify territories that are performing well and territories that may need more attention.
+
+**Output:** `data/processed/territory_report.csv`
+
+### 4. Quota Attainment Analysis
+
+Implemented quota attainment calculations to compare actual sales with assigned sales targets.
+
+The following calculations were performed:
+- Total assigned quota.
+- Actual sales.
+- Quota attainment percentage.
+- Performance status.
+
+The representatives were classified into four categories:
+
+| Attainment | Status |
+|---|---|
+| 100% or above | Exceeding |
+| 70%–99% | On Track |
+| 50%–69% | Behind |
+| Below 50% | At Risk |
+
+**Output:** `data/processed/quota_summary.csv`
+
+### 5. Sales Pipeline Analysis
+
+Developed a pipeline analytics module to calculate the expected value of ongoing sales opportunities.
+
+Different probabilities were assigned to pipeline stages:
+
+| Stage | Probability |
+|---|---:|
+| Prospecting | 10% |
+| Qualification | 25% |
+| Proposal | 50% |
+| Negotiation | 75% |
+| Closing | 90% |
+
+Weighted Pipeline Value was calculated using:
+
+**Weighted Pipeline = Deal Amount × Stage Probability**
+
+This provides an estimate of the expected revenue from the current sales pipeline.
+
+Generated two files:
+- `data/processed/pipeline_details.csv`
+- `data/processed/pipeline_summary.csv`
+
+### 6. Deal Health Scoring
+
+Created a rule-based deal health scoring system to understand the condition of individual sales opportunities.
+
+The score was calculated using four factors:
+
+| Factor | Weight |
+|---|---:|
+| Stage Progress | 40% |
+| Customer Activity | 25% |
+| Stakeholder Engagement | 20% |
+| Deal Velocity | 15% |
+
+Based on the final score, deals were classified as:
+
+| Score | Category |
+|---|---|
+| 75–100 | Strong |
+| 55–74 | Healthy |
+| 35–54 | At Risk |
+| Below 35 | Critical |
+
+The average deal health score obtained was **68.28 out of 100**.
+
+**Output:** `data/processed/deal_health_report.csv`
+
+### 7. Tools and Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- VS Code
+
+### 8. Work Completed
+
+The following five modules were successfully implemented:
+
+1. Representative Performance Analysis.
+2. Territory Performance Analysis.
+3. Quota Attainment Analysis.
+4. Sales Pipeline Analysis.
+5. Deal Health Scoring.
+
+Five processed CSV reports were generated and saved in the project directory.
+
+### 9. Conclusion
+
+Day 2 focused on converting the raw sales datasets into useful business information. The implemented modules help understand sales representative performance, territory revenue, quota achievement, pipeline value and the overall health of sales opportunities.
+
+These analytics will be useful for building the machine learning and forecasting modules in the next stages of the project.
+
+**Status: DAY 2 COMPLETED**

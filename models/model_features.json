@@ -1,0 +1,22 @@
+[
+    "amount",
+    "days_in_stage",
+    "contacts_count",
+    "decision_maker_identified",
+    "demo_completed",
+    "proposal_sent",
+    "competitor_involved",
+    "activity_score",
+    "lead_source_Cold Call",
+    "lead_source_Referral",
+    "lead_source_Website",
+    "industry_Finance",
+    "industry_Healthcare",
+    "industry_IT",
+    "industry_Manufacturing",
+    "industry_Retail",
+    "account_size_Medium",
+    "account_size_Small",
+    "stage_at_prediction_Negotiation",
+    "stage_at_prediction_Proposal"
+]

@@ -1,0 +1,131 @@
+# AGENTAI-035 – SALES MANAGEMENT SYSTEM
+## DAY 3 PROGRESS REPORT
+
+### 1. Objective
+
+The main objective of Day 3 was to implement a machine learning model that can predict the probability of winning a sales opportunity. The work also included preparing the dataset, training the model and understanding its predictions using explainable AI.
+
+### 2. Dataset Preparation
+
+Prepared the sales opportunity dataset for machine learning.
+
+The original dataset contained 600 opportunities, including open, won and lost deals.
+
+To make the data suitable for model training:
+- Selected only closed opportunities.
+- Improved the synthetic win/loss outcome generation using sales-related factors.
+- Considered representative performance, customer engagement, decision-maker identification, demos and proposals.
+- Created a separate ML-ready dataset.
+
+The final dataset contained:
+
+| Category | Records |
+|---|---:|
+| Total Opportunities | 600 |
+| Closed Deals | 152 |
+| Won Deals | 83 |
+| Lost Deals | 69 |
+
+The calculated win rate was 54.61%.
+
+Output:
+data/processed/opportunities_ml_ready.csv
+
+### 3. Feature Engineering
+
+Selected relevant features for predicting deal outcomes.
+
+The features included:
+- Deal amount.
+- Days in current stage.
+- Number of customer contacts.
+- Decision-maker identification.
+- Demo completion.
+- Proposal submission.
+- Competitor involvement.
+- Activity score.
+- Lead source.
+- Industry.
+- Account size.
+- Stage at prediction.
+
+Categorical features were converted into numerical columns using one-hot encoding.
+
+The final Won/Lost outcome was used as the target variable.
+
+### 4. Model Training
+
+Implemented an XGBoost classification model.
+
+The dataset was divided chronologically:
+- 70% for training.
+- 15% for validation.
+- 15% for testing.
+
+The model was trained using historical closed sales opportunities.
+
+XGBoost was selected because it works well with structured datasets and can learn relationships between multiple sales-related features.
+
+### 5. Model Evaluation
+
+Evaluated the trained model using:
+
+- Accuracy.
+- Precision.
+- Recall.
+- F1-score.
+- ROC-AUC.
+- PR-AUC.
+- Confusion Matrix.
+
+These metrics help understand how well the model distinguishes between won and lost opportunities.
+
+Note: The dataset is relatively small and synthetically generated, so the evaluation results are preliminary.
+
+### 6. Explainable AI Using SHAP
+
+Implemented SHAP (SHapley Additive exPlanations) to understand the factors influencing model predictions.
+
+Generated two visualizations:
+
+1. SHAP Summary Plot.
+2. SHAP Feature Importance Plot.
+
+These visualizations help identify which features have the greatest influence on the model's predictions.
+
+Generated files:
+- output/shap_summary.png
+- output/shap_importance.png
+
+### 7. Model Saving
+
+Saved the trained model using Joblib so it can be reused without training it again.
+
+Generated files:
+
+- models/xgb_win_model.joblib
+- models/model_features.json
+
+### 8. Tools and Technologies
+
+- Python
+- Pandas
+- NumPy
+- XGBoost
+- Scikit-learn
+- SHAP
+- Matplotlib
+- Joblib
+- VS Code
+
+### 9. Outcome
+
+Successfully completed the initial machine learning pipeline, including dataset preparation, feature engineering, model training, evaluation and SHAP explainability.
+
+The trained model and its feature information were saved for future integration into the Sales Management System.
+
+### 10. Conclusion
+
+Day 3 focused on adding machine learning capabilities to the project. The XGBoost model provides a foundation for predicting sales opportunity outcomes, while SHAP helps explain the factors behind its predictions.
+
+**Status: DAY 3 COMPLETED**
