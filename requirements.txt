@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+xgboost
+prophet
+statsmodels
+shap
+openai
+langchain
+langchain-openai
+streamlit
+plotly
+reportlab
+python-dotenv
+joblib
+sqlalchemy
+matplotlib

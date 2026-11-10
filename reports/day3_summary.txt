@@ -19,12 +19,11 @@ To make the data suitable for model training:
 
 The final dataset contained:
 
-| Category | Records |
-|---|---:|
-| Total Opportunities | 600 |
-| Closed Deals | 152 |
-| Won Deals | 83 |
-| Lost Deals | 69 |
+ Category - Records 
+ Total Opportunities - 600 
+ Closed Deals - 152 
+ Won Deals - 83 
+ Lost Deals - 69 
 
 The calculated win rate was 54.61%.
 
